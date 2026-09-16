@@ -50,7 +50,7 @@ body::before {
 .intro { text-align: center; }
 .brand-mark { display: grid; place-items: center; height: 147px; margin-bottom: 33px; }
 .brand-mark img { display: block; max-width: 220px; max-height: 147px; object-fit: contain; }
-.monogram { display: block; width: 214px; height: 150px; overflow: visible; filter: drop-shadow(0 3px 2px #000) drop-shadow(0 0 14px #d0a17615); }
+.monogram { display: block; width: 150px; height: 150px; object-fit: contain; mix-blend-mode: screen; }
 h1 { margin: 0; font: 400 clamp(35px, 9.3vw, 44px)/.98 var(--serif); letter-spacing: .065em; color: #f2e7d8; }
 h1 span { display: inline-block; margin-top: 7px; letter-spacing: .09em; }
 .signature-line { width: 65px; height: 1px; background: linear-gradient(90deg, transparent, #dfb68e, transparent); margin: 23px auto; }
