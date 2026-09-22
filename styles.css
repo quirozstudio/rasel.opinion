@@ -117,6 +117,14 @@ footer p { margin: 0; font-size: 11px; line-height: 1.8; }
   .salons { margin-top: 36px; gap: 18px; }
   .salon { padding: 28px 30px 14px; }
 }
+@media (max-width: 599px) {
+  .page { padding-top: max(24px, env(safe-area-inset-top)); }
+  .brand-mark { height: 112px; margin-bottom: 20px; }
+  .monogram { width: 122px; height: 122px; }
+  h1 { font-size: clamp(31px, 8.7vw, 38px); }
+  .signature-line { margin: 17px auto; }
+  .salons { margin-top: 24px; }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
