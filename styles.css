@@ -125,6 +125,19 @@ footer p { margin: 0; font-size: 11px; line-height: 1.8; }
   .signature-line { margin: 17px auto; }
   .salons { margin-top: 24px; }
 }
+/* Algunos navegadores Android reportan un viewport CSS de escritorio aunque la pantalla sea táctil. */
+@media (hover: none) and (pointer: coarse) {
+  .page { width: 100%; max-width: none; padding: max(24px, env(safe-area-inset-top)) 22px max(28px, env(safe-area-inset-bottom)); }
+  .brand-mark { height: 112px; margin-bottom: 20px; }
+  .monogram { width: 122px; height: 122px; }
+  h1 { font-size: clamp(31px, 8.7vw, 38px); }
+  .signature-line { margin: 17px auto; }
+  .salons { margin-top: 24px; gap: 14px; }
+  .salon { padding: 22px 22px 18px; }
+  .salon h2 { font-size: 20px; }
+  .detail { font-size: 13px; }
+  footer { padding-top: 24px; }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
